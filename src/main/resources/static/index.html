@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prudutos da API</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Produtos de Auto Peças</h1>
+        </nav>
+    </header>
+    <main>
+        <h1>Produtos Cadastrados</h1>
+        <nav class="nav_lista">
+            <ol id="lista_produtos" class="lista">
+                <li>teste</li>
+            </ol>
+
+            
+        </nav>
+       
+        <form method="post" action="#" class="formulario" id="productForm">
+
+            
+            <input type="text" id="nome" class="campo" placeholder="Digite o nome" required>
+            <div></div>
+            
+            <input type="number" id="preco" class="campo" placeholder="Digite o preço" required>
+            <div></div>
+            <button id="botao-adicionar" type="button">Adicionar Produto</button>
+            <button id="botao-excluir" type="button">Excluir Produto</button>
+            <button id="botao-editar" type="button">Editar Produto</button>
+            
+        </form>
+        
+        <script src="script.js"></script>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Autopecars. Todos os direitos reservados para Yuri Ramalho Silva.</p>
+    </footer>
+    
+</body>
+</html>

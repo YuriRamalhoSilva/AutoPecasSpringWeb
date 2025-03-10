@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+header {
+    background-color:  grey;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-align: center;
+    height: 30px;
+    
+}
+  
+.lista {
+    text-align: left;
+}
+  
+.selecionado {
+    background-color: #6b6868;
+}
+
+.nav_lista {
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px; 
+    text-align: left;
+}
+  
+main {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+}
+  
+.formulario {
+    width: 600px;
+   
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   
+}
+  
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flexbox;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+  
+ 
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+button:hover {
+    background-color: #333;
+}
+  
+footer {
+    color: black;
+    background-color:  grey;
+    text-align: center;
+    padding: 10px;
+    height: 30px;
+}
