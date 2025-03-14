@@ -36,6 +36,26 @@
             <button id="botao-editar" type="button">Editar Produto</button>
             
         </form>
+
+
+        <form method="post" action="#" id="productEdit">
+
+            <!-- Popup de Edição -->
+            <div id="popupEditar" class="popup_edit">
+                <div class="popup-conteudo">
+                    
+                    <h2>Preencha os campos para editar seu produto!</h2>
+                    <input type="text" class="campo" id="editarNome" placeholder="Nome do Produto">
+                    <div></div>
+                    <input type="number" class="campo" id="editarPreco" placeholder="Preço do Produto">
+                    <div class="button">
+                        <button class="editar_conf" id="confirmarEdicaobtn">Confirmar</button>
+                        <button class="cancelar_conf" id="cancelarEdicaobtn">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
         
         <script src="script.js"></script>
 

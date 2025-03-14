@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProdutoService {
@@ -31,4 +32,17 @@ public class ProdutoService {
 
     }
 
+    public Produto atualizarProduto(Integer id,Produto newproduto){
+        //Verificar se o produto existe cirando um Optional da classe Produto e proucura o produto no Repository via ID
+        Optional<Produto> produtoExists = produtoRepository.findById(id);
+        // Depois vem a condição de existencia do produto
+        if (produtoExists.isPresent()) { //Se o produto realmente existir ele passa pro processo de subtituição de nome e preço
+            Produto produto = produtoExists.get(); //Aki um produto da classe Produto é criado para manipular o produto já existente na API
+            produto.setNome(newproduto.getNome()); //Aki a substituição do nome existente pelo nome do newproduto
+            produto.setPreco(newproduto.getPreco()); //Aki a substituição do preço existente pelo preço do newproduto
+            return produtoRepository.save(produto); //Depois ele é salvo no banco de dados já com seus atributos modificados e teoricamente ele permaneçe com o mesmo ID
+        } else {
+            throw new RuntimeException("Produto com id: "+id+" não existe!");
+        }
+    }
 }
